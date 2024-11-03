@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box_sizing: border-box;
+}
+
+:root{
+    --light: #f6f6f9;
+    --primary: #1976d2;
+    --light-primary: #cfe8ff;
+    --grey: #fff;
+    --dark-gray: #aaaaaa;
+    --dark: #363949;
+    --danger: #d32f2f;
+    --light-danger: #fecdd3;
+    --warning: #fbc02d;
+    --light-warning: #fff2c6;
+    --success: #388e3c;
+    --light-success: #bbf7de;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--light);
+    font-family: "Poppins", sans-serif;;
+    margin-top: 100px;
+}
+
+.container{
+    max-width: 100%;
+    width: 50%;
+    margin: 0 auto;
+    background-color: var(--grey);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #000;
+    overflow-x: hidden;
+}
+
+.container h2{
+    padding: 2rem 0;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+
+/* <!-- ______________________Table content start___________ --> */
+.tbl_contant{
+    padding: 2rem;
+    background-color: var(--light);
+    margin: 1rem 2rem;
+    border-radius: 10px;
+}
+.tbl_contant h3{
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+
+.tbl_tr_content{
+    list-style: none;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    gap: 14px;
+    flex-direction: column;
+    display: none;
+}
+.tbl_tr_content.active{
+    display: flex;
+}
+
+.table_data{
+    overflow-y: auto;
+    height: 150px;
+}
+.button_tr{
+    gap: 10px;
+    display: flex;
+    justify-content: end;
+}
+.tbl_tr_content button{
+    outline: none;
+    border: none;
+    padding: 0.4rem;
+    background-color: var(--danger);
+    color: var(--light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+.tbl_tr_content button:active{
+    transform: scale(0.98);
+}
+
+.tbl_tr_content button:first-child{ 
+ 
+    background-color: var(--success);
+}
+#inp{
+    background: #363949;
+}
+#inp::placeholder{
+    color: white;
+}
